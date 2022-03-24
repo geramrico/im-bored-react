@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className='flex flex-col justify-between h-screen p-3 bg-base-200'>
         <Navbar title='Im Bored' />
-        <main className='container mx-auto px-3 pb-12 border-2'>
+        <main className='container mx-auto px-3 pb-12'>
           <Routes>
             <Route path='/' element={<Home />} />
           </Routes>
