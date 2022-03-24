@@ -36,7 +36,7 @@ const BoredButton = () => {
 
   return (
     <div className='flex flex-col flex-center'>
-      {!loading ? <h1 className='text-3xl lg:text-4xl xl:text-5xl mb-8 font-bold mx-auto text-center'>{activity}</h1> : <h1>Loading</h1>}
+      {activity && <h1 className='text-3xl lg:text-4xl xl:text-5xl mb-8 font-bold mx-auto text-center'>{activity}</h1>}
 
       <div className='mx-auto mb-4 text-center flex flex-col sm:flex-row'>
         <button className='btn btn-primary mx-auto' onClick={getActivity}>

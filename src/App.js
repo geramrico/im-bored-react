@@ -3,6 +3,7 @@ import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+import BoredToo from './pages/BoredToo'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <main className='container mx-auto px-3 pb-12'>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/imboredtoo' element={<BoredToo />} />
           </Routes>
         </main>
         <Footer />

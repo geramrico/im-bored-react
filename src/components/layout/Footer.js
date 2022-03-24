@@ -1,3 +1,4 @@
+import { FaEnvelope } from 'react-icons/fa'
 const Footer = () => {
   const footerYear = new Date().getFullYear()
 
@@ -11,7 +12,10 @@ const Footer = () => {
         footer-center'
     >
       <div>
-        <p>Gerardo Morales</p>
+        <a href='mailto:geramoralesrico@gmail.com'>
+          Gerardo Morales <FaEnvelope className='inline' />
+        </a>
+
         <p className=''>Copyright &copy; {footerYear} All rights reserved</p>
       </div>
     </footer>

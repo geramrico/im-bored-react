@@ -6,7 +6,7 @@ const Navbar = ({ title }) => {
     <nav className='navbar mb-12 shadow-lg rounded-lg bg-white'>
       <div className='container mx-auto'>
         <div className='flex-none px-2 mx-2'>
-          <Link to='/' className='text-lg font-bold align-middle btn btn-ghost'>
+          <Link to='/imboredtoo' className='text-lg font-bold align-middle btn btn-ghost'>
             {title}
           </Link>
         </div>
