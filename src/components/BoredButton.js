@@ -10,10 +10,8 @@ const BoredButton = () => {
   const typeOptions = ['education', 'recreational', 'social', 'diy', 'charity', 'cooking', 'relaxation', 'music', 'busywork']
 
   const getActivity = async () => {
-    const params = new URLSearchParams({
-      type: activityType,
-    })
-    const response = await fetch(`http://www.boredapi.com/api/activity?${params}`)
+    const response = await fetch(`http://www.boredapi.com/api/activity`)
+    // const response = await fetch(`http://www.boredapi.com/api/activity?type=${activityType}`)
     const data = await response.json()
     setBtnText('Show me more')
     setActivity(data.activity)
